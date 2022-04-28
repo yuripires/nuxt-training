@@ -28,17 +28,18 @@
             <v-text-field
               v-model="userData.email"
               label="E-mail"
+              :rules ="emailRules"
               required
             />
           </v-col>
         </v-row>
-        <v-btn type="submit">
+        <v-btn @keyup.enter="addUser" type="submit">
           Submit
         </v-btn>
       </v-container>
     </v-form>
     <li v-for="user in userInformation" :key="user.id">
-      {{ user.firstName }} {{ user.lastName }}
+      {{ user.firstName }} {{ user.lastName }} {{user.email}}
     </li>
   </div>
 </template>
@@ -58,6 +59,10 @@ export default {
         value => !!value || 'Name is required',
         v => v.length <= 10 || 'Name must be less than 10 characters',
         v => v.length > 1 || 'Minimun lenght is 2'
+      ],
+      emailRules: [
+        v => !!v || 'E-mail is required',
+        v => /.+@.+/.test(v) || 'E-mail must be valid'
       ],
       userInformation: []
     }

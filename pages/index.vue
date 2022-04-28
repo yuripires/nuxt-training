@@ -46,7 +46,7 @@
             more exciting features in the future.
           </p>
           <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+            <em><small>&mdash; John Leider </small></em>
           </div>
           <hr class="my-3" />
           <a
@@ -67,8 +67,8 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/joinUs"> Join Us </v-btn>
-          <v-btn color="primary" nuxt to="/membersPage"> Members </v-btn>
+          <v-btn color="primary" nuxt to="/members/join-us"> Join Us </v-btn>
+          <v-btn color="primary" nuxt to="/members"> Members </v-btn>
         </v-card-actions>
       </v-card>
     </v-col>

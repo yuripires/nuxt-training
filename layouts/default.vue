@@ -86,7 +86,7 @@ export default {
         {
           icon: 'mdi-chart-bubble',
           title: 'Members',
-          to: '/membersPage'
+          to: '/members'
         }
       ],
       miniVariant: false,
