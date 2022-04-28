@@ -16,8 +16,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              Wiki </a
-            >.
+              Wiki </a>.
           </p>
           <p>
             If you have questions, please join the official
@@ -27,8 +26,7 @@
               rel="noopener noreferrer"
               title="chat"
             >
-              discord </a
-            >.
+              discord </a>.
           </p>
           <p>
             Find a bug? Report it on the github
@@ -38,8 +36,7 @@
               rel="noopener noreferrer"
               title="contribute"
             >
-              issue board </a
-            >.
+              issue board </a>.
           </p>
           <p>
             Thank you for developing with Vuetify and I look forward to bringing
@@ -48,7 +45,6 @@
           <div class="text-xs-right">
             <em><small>&mdash; John Leider </small></em>
           </div>
-          <hr class="my-3" />
           <a
             href="https://nuxtjs.org/"
             target="_blank"
@@ -56,7 +52,6 @@
           >
             Nuxt Documentation
           </a>
-          <br />
           <a
             href="https://github.com/nuxt/nuxt.js"
             target="_blank"
@@ -67,8 +62,12 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/members/join-us"> Join Us </v-btn>
-          <v-btn color="primary" nuxt to="/members"> Members </v-btn>
+          <v-btn color="red" nuxt to="/members/join-us">
+            Join Us 
+          </v-btn>
+          <v-btn color="primary" nuxt to="/members">
+            Members
+          </v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
@@ -76,5 +75,5 @@
 </template>
 
 <script>
-export default { name: 'IndexPage' }
+export default { name: 'IndexPage' };
 </script>

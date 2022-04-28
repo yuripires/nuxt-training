@@ -28,55 +28,58 @@
             <v-text-field
               v-model="userData.email"
               label="E-mail"
-              :rules ="emailRules"
+              :rules="emailRules"
               required
             />
           </v-col>
         </v-row>
-        <v-btn @keyup.enter="addUser" type="submit">
+        <v-btn type="submit" @keyup.enter="addUser">
           Submit
+        </v-btn>
+        <v-btn color="primary" nuxt to="/members"> 
+          See our Members 
+        </v-btn>
+        <v-btn color="primary" nuxt to="/"> 
+          Go to the front page
         </v-btn>
       </v-container>
     </v-form>
-    <li v-for="user in userInformation" :key="user.id">
-      {{ user.firstName }} {{ user.lastName }} {{user.email}}
-    </li>
   </div>
 </template>
 
 <script>
 export default {
   name: 'InspirePage',
-  data () {
+  data() {
     return {
       userData: {
         firstName: '',
+
         lastName: '',
+
         email: '',
+
         id: ''
       },
       nameRules: [
-        value => !!value || 'Name is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters',
-        v => v.length > 1 || 'Minimun lenght is 2'
+        (value) => !!value || 'Name is required',
+        (v) => v.length <= 10 || 'Name must be less than 10 characters',
+        (v) => v.length > 1 || 'Minimun lenght is 2'
       ],
       emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+/.test(v) || 'E-mail must be valid'
+        (v) => !!v || 'E-mail is required',
+        (v) => /.+@.+/.test(v) || 'E-mail must be valid'
       ],
       userInformation: []
-    }
+    };
   },
   methods: {
-    addUser () {
-      console.log('validate', this.$refs.formUser.validate())
+    addUser() {
       if (this.$refs.formUser.validate()) {
-        this.userData.id = Date.now()
-        const userData = { ...this.userData }
-        console.log('userData', userData)
-        this.userInformation.push(userData)
+        this.userData.id = Date.now() - Math.random();
+        this.$store.dispatch('setUser', this.userData);
       }
     }
   }
-}
+};
 </script>
