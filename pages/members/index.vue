@@ -11,14 +11,21 @@
         <h1> Our current members are:</h1>
       </div>
       <v-list v-for="user in userInformation" :key="user.id">
-        Name: {{ user.firstName }} {{ user.lastName }} Email {{ user.email }}
+        <p class="red darken-4--text font-weight-bold ">
+          Name: {{ user.firstName }} {{ user.lastName }} 
+        </p>
+        <p class="blue darken-4--text font-weight-bold">
+          Email: {{ user.email }} 
+        </p>
       </v-list>
-      <v-btn color="red" nuxt to="/members/join-us"> 
-        Join Us
-      </v-btn>
-      <v-btn color="primary" nuxt to="/"> 
-        Go to the front page
-      </v-btn>
+      <v-col class="mt-2">
+        <v-btn color="red" nuxt to="/members/join-us"> 
+          Join Us
+        </v-btn>
+        <v-btn color="primary" nuxt to="/"> 
+          Go to the front page
+        </v-btn>
+      </v-col>
     </v-card>
   </v-row>
 </template>
