@@ -1,0 +1,36 @@
+[{
+    "name": "Unicorn",
+    "image": "https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABffd1xVhFHdTsoEvBMGggByFljPZxaPXo1QNv60pdqUlwNWHYoqhGTFrXYqsL7FZeYRJIJX_SsD-GjHIgDNAHFBKrqRx.jpg?r=01d",
+    "link": "https://gundam.fandom.com/wiki/RX-0_Unicorn_Gundam",
+    "id": "1"
+},
+{
+    "name": "Barbatos",
+    "image": "https://static.zerochan.net/ASW-G-08.Gundam.Barbatos.Lupus.full.2380735.jpg",
+    "link":"https://gundam.fandom.com/wiki/ASW-G-08_Gundam_Barbatos",
+    "id": "2"
+},
+{
+    "name": "Wing",
+    "image": "https://i.pinimg.com/originals/b6/c2/c8/b6c2c82d33016b0f09782ff601ca2387.jpg",
+    "link":"https://gundam.fandom.com/wiki/XXXG-00W0_Wing_Gundam_Zero_EW",
+    "id": "3"
+},
+{
+    "name": "Dynames",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPVNktmu-dyu_S9Fs6DmOWzcAc-7vxPRvubQ&usqp=CAU",
+    "link":"https://gundam.fandom.com/wiki/GN-002_Gundam_Dynames",
+    "id": "4"
+},
+{
+    "name": "Exia",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhbWsqo2xW4TSjS665J23zGvZeFTDJ_U3bag&usqp=CAU",
+    "link":"https://gundam.fandom.com/wiki/GN-001_Gundam_Exia",
+    "id": "5"
+},
+{
+    "name": "Bolt",
+    "image": "https://i.pinimg.com/originals/31/84/29/31842974619e33f6a0a7538a31ce30d7.jpg",
+    "link":"https://gundam.fandom.com/wiki/GF13-013NR_Bolt_Gundam",
+    "id": "6"
+}]

@@ -68,6 +68,9 @@
           <v-btn color="primary" nuxt to="/members">
             Members
           </v-btn>
+          <v-btn color="primary" nuxt to="/find-your-gundam">
+            Find your Gundam
+          </v-btn>
         </v-card-actions>
       </v-card>
     </v-col>

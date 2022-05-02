@@ -84,18 +84,25 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-human-male',
 
           title: 'Join us',
 
           to: '/members/join-us'
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: 'mdi-book-open',
 
           title: 'Members',
 
           to: '/members'
+        },
+        {
+          icon: 'mdi-robot',
+
+          title: 'Gundams',
+
+          to: '/gundams'
         }
       ],
       miniVariant: false,
