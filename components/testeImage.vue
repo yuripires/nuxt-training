@@ -1,5 +1,5 @@
 <template>
-  <img  class="vuetify-logo" alt="Vuetify Logo" src="/barbatos.jpg" />
+  <img class="vuetify-logo" alt="Vuetify Logo" src="/barbatos.jpg">
 </template>
 
 <style>
