@@ -103,6 +103,13 @@ export default {
           title: 'Gundams',
 
           to: '/gundams'
+        },
+        {
+          icon: 'mdi-magnify',
+
+          title: 'find a gundam',
+
+          to: '/gundams/find-a-gundam'
         }
       ],
       miniVariant: false,

@@ -3,7 +3,12 @@
     <v-card>
       <h1 style="text-align:center">
         Here are our Gundams
-      </h1>
+      </h1> 
+      <v-container justify-center>
+        <v-btn color="primary" nuxt to="/gundams/find-a-gundam">
+          Find a Gundam
+        </v-btn>
+      </v-container>
       <div v-for="gundam in gundams" :key="gundam.id">
         <list-items :link="gundam.link" :name="gundam.name" :image="gundam.image" />
       </div>
